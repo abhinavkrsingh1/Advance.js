@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Example</title>
+    <style>
+        div {
+            padding: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        Parent
+        <div id="child">
+            Child
+            <div id="grandchild">
+                Grandchild
+            </div>
+        </div>
+    </div>
+ 
+    <input type="text" id="search" placeholder="Type to search..." />
+    <p id="output"></p>
+
+   
+
+
+    <script src="script.js">
+        document.getElementById("parent").addEventListener("click", function () {
+            console.log("Parent clicked");
+        });
+
+        document.getElementById("child").addEventListener("click", function () {
+            console.log("Child clicked");
+        });
+
+        document.getElementById("grandchild").addEventListener("click", function () {
+            console.log("Grandchild clicked");
+        });
+    </script>
+</body>
+</html>
