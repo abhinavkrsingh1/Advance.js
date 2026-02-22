@@ -37,3 +37,21 @@ class Dog extends   Animal{
 const mydog = new Dog("Buddy","Golden Retriver")
 console.log(mydog);
 mydog.speak()
+
+//Encapsulation 
+class Account {
+    #balance 
+    constructor(owner,initialBalance){
+        this.owner=owner;
+        this.#balance=initialBalance
+    }
+    deposit(amount){
+        if(amount> 0) this.#balance += amount
+    }
+    getBalance(){
+        return this.#balance;
+    }
+}
+const acc = new Account('Abhinav',20000)
+acc.deposit(500)
+console.log(acc.getBalance());
