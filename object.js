@@ -19,7 +19,7 @@ const obj = {
     pNo:"**********"
 
 }
-console.log(Object.assign({obj},{Name:"Rahul",age:25,role:"SDE"}));
+console.log(Object.assign({obj},{Name1:"Rahul",age1:25,role1:"SDE"}));
 console.log(Object.keys(obj));
 console.log(Object.values(obj));
 console.log(Object.entries(obj));
