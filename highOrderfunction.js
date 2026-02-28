@@ -19,3 +19,21 @@ function isBinary(n){
 }
 let output2=arr.map((n)=> isBinary(n))
 console.log(output2);
+
+let output3 = arr.filter((n)=>{
+     if(n%2===0) return true 
+})
+console.log(output3);
+
+let data = [
+    {email:"abhinavbaddu01@gmail.com"},
+    {email:"akash@gmail.com"}
+];
+
+let updated = data.map((item,index)=>{
+    if(index===0){
+    return {...item,email:null}
+    }
+    return item
+})
+console.log(updated);
