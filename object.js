@@ -37,10 +37,16 @@ const parent = {
 const child = Object.create(parent);
 
 child.greet();
+// learing how push obj in array
 
+let arr = []
+function obj(ob){
+    const l = arr.push(ob)
 
+}
+obj({name:"Abhinav",age:24})
 
-
+console.log(arr);
 
 
 
