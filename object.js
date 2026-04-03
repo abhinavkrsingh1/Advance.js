@@ -37,7 +37,7 @@ const parent = {
 const child = Object.create(parent);
 
 child.greet();
-// learing how push obj in array
+
 
 let arr = []
 function obj(ob){
